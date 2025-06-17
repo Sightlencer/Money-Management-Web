@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="forum.html" class="flex items-center justify-center w-12 h-12 bg-gray-100 rounded-lg text-gray-600 hover:bg-gray-200 transition">
+                    <i class="fa-solid fa-arrow-left text-xl"></i>
+                </a>
+                <div id="auth-container" class="flex items-center space-x-3"></div>
+            </div>
+        </nav>
+    </header>
+    <main class="container mx-auto p-4 sm:p-6 lg:p-8">
+        <div class="bg-white p-5 rounded-lg shadow-sm mb-6">
+            <h1 id="discussion-title" class="text-2xl font-bold">Loading...</h1>
+        </div>
+        <div id="posts-area" class="bg-white p-6 rounded-lg shadow-sm mb-6 space-y-6" style="min-height: 50vh;"></div>
+        <form id="reply-form" class="bg-white p-3 rounded-lg shadow-sm flex items-center gap-4 sticky bottom-4">
+            <input id="reply-input" type="text" placeholder="Type your message..." class="flex-grow w-full bg-gray-100 rounded-lg p-3 border-transparent" disabled>
+            <button id="reply-button" type="submit" class="bg-blue-600 text-white rounded-lg p-3 hover:bg-blue-700 transition" disabled>
+                <i class="fa-solid fa-paper-plane text-xl"></i>
+            </button>
+        </form>
+    </main>
+    <script src="scripts/auth.js"></script>
+    <script src="scripts/discussion.js"></script>
+</body>
+</html>

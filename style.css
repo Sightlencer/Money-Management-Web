@@ -1,0 +1,77 @@
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f4f6; 
+    color: #1f2937;
+}
+
+/* header */
+.balance-highlight {
+    background-color: #A7FFEB;
+}
+
+/* card */
+.earning-card {
+    background-color: #C8E6C9;
+}
+.earning-text {
+    color: #2E7D32;
+}
+.spending-card {
+    background-color: #FFCDD2;
+}
+.spending-text {
+    color: #C62828;
+}
+.activity-card {
+    background-color: #B3E5FC;
+}
+.activity-text {
+    color: #01579B;
+}
+
+/* transaction */
+.activity-summary {
+    background-color: #A7FFEB;
+}
+.activity-amount {
+    color: #004D40;
+}
+.expense-item {
+    background-color: #EF5350;
+}
+.income-item {
+    background-color: #66BB6A;
+}
+
+.modal {
+    transition: opacity 0.3s ease;
+}
+
+/* calendar */
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+.day-cell {
+    min-height: 120px;
+    transition: background-color 0.2s ease-in-out;
+}
+.day-cell:hover {
+    background-color: #f0f8ff;
+    cursor: pointer;
+}
+
+/* buttons */
+.save-button {
+    background-color: #A7FFEB;
+    color: #004D40;
+}
+.save-button:hover {
+    background-color: #82f7e2;
+}
+.save-button:disabled {
+    background-color: #cceae4;
+    color: #6dbfb0;
+    cursor: not-allowed;
+}
